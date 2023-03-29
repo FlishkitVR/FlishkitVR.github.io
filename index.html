@@ -41,9 +41,9 @@ var xFn = function(t) { return 650 * _xFn(t); }
 var zFn = function(t) { return 650 * _yFn(t); }
 
 var playerSphere = BABYLON.MeshBuilder.CreateBox("playerSphere", {
-width: 10,
-height: 0.5,
-depth: 12
+width: 4,
+height: 4,
+depth: 4
 }, scene);
 playerSphere.material = new BABYLON.StandardMaterial("playerSphereMaterial", scene);
 playerSphere.material.diffuseTexture = new BABYLON.Texture('resources/BeachBallColor.jpg', scene);
