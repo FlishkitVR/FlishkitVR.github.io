@@ -161,12 +161,12 @@ width: .25,
 depth: 12
 }, scene);
 ramp.material = new BABYLON.StandardMaterial("rampMaterial", scene);
-ramp.material.diffuseColor = new BABYLON.Color3(1, 0, 0);
+ramp.material.diffuseColor = new BABYLON.Color3(0, 0, 1);
 ramp.physicsImpostor = new BABYLON.PhysicsImpostor(ramp, BABYLON.PhysicsImpostor.BoxImpostor, {
 mass: 0,
 restitution: 0.9
 }, scene);
-ramp.position = new BABYLON.Vector3(xFn(t), 3.2, zFn(t));
+ramp.position = new BABYLON.Vector3(xFn(t), 3, zFn(t));
 
 ramp.rotation.z = angle;
 ramp.rotation.y = -derivAngle(t, xFn, zFn);
@@ -178,7 +178,7 @@ diameter:4
 }, scene);
 angle = -derivAngle(t, xFn, zFn);
 wall.material = new BABYLON.StandardMaterial("wallMaterial", scene);
-wall.material.diffuseColor = new BABYLON.Color3(1, 1, 0);
+wall.material.diffuseColor = new BABYLON.Color3(1, 0, 0);
 wall.physicsImpostor = new BABYLON.PhysicsImpostor(wall, BABYLON.PhysicsImpostor.BoxImpostor, {
 mass: 0,
 restitution: 0.9
